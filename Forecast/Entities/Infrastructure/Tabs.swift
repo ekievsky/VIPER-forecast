@@ -26,18 +26,18 @@ extension Tabs {
     var image: UIImage {
         switch self {
         case .today:
-            return UIImage(named: "icToday")!
+            return Assets.Images.TabBar.today
         case .forecast:
-            return UIImage(named: "icForecast")!
+            return Assets.Images.TabBar.forecast
         }
     }
 
     var selectedImage: UIImage {
         switch self {
         case .today:
-            return UIImage(named: "icTodaySelected")!
+            return Assets.Images.TabBar.todaySelected
         case .forecast:
-            return UIImage(named: "icForecastSelected")!
+            return Assets.Images.TabBar.forecastSelected
         }
     }
 }

@@ -71,7 +71,7 @@ private extension ForecastViewController {
     }
 
     func configureNavigation() {
-        let barButton = UIBarButtonItem(image: UIImage(named: "icRefresh"), style: .plain,
+        let barButton = UIBarButtonItem(image: Assets.Images.Common.refresh, style: .plain,
                                         target: self, action: #selector(refreshButtonAction(_:)))
         navigationItem.rightBarButtonItem = barButton
         refreshButton = barButton

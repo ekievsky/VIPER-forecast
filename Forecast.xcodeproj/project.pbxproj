@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56219AA121FC68BD00F3EA91 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56219AA021FC68BD00F3EA91 /* Assets.swift */; };
 		5622ECBA21FA62E2008878A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECB921FA62E2008878A0 /* AppDelegate.swift */; };
 		5622ECC121FA62E5008878A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5622ECC021FA62E5008878A0 /* Assets.xcassets */; };
 		5622ECC421FA62E5008878A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5622ECC221FA62E5008878A0 /* LaunchScreen.storyboard */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		5552DB4241940BEA3E82547A /* Pods-Forecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forecast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forecast/Pods-Forecast.debug.xcconfig"; sourceTree = "<group>"; };
+		56219AA021FC68BD00F3EA91 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5622ECB621FA62E2008878A0 /* Forecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5622ECB921FA62E2008878A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5622ECC021FA62E5008878A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56219A9F21FC68A800F3EA91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5622ECC021FA62E5008878A0 /* Assets.xcassets */,
+				5622ECC221FA62E5008878A0 /* LaunchScreen.storyboard */,
+				56219AA021FC68BD00F3EA91 /* Assets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5622ECAD21FA62E2008878A0 = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +160,8 @@
 				5622ECD521FA63E0008878A0 /* Entities */,
 				5622ECD421FA63D9008878A0 /* Factories */,
 				5622ECD321FA63D4008878A0 /* Scenes */,
+				56219A9F21FC68A800F3EA91 /* Resources */,
 				5622ECB921FA62E2008878A0 /* AppDelegate.swift */,
-				5622ECC021FA62E5008878A0 /* Assets.xcassets */,
-				5622ECC221FA62E5008878A0 /* LaunchScreen.storyboard */,
 				5622ECC521FA62E5008878A0 /* Info.plist */,
 			);
 			path = Forecast;
@@ -570,6 +581,7 @@
 				5622ECFB21FA7CF3008878A0 /* TodayWeatherViewController.swift in Sources */,
 				5622ECE321FA6A83008878A0 /* ApiService.swift in Sources */,
 				5622ECD121FA63CC008878A0 /* RequestBuilder.swift in Sources */,
+				56219AA121FC68BD00F3EA91 /* Assets.swift in Sources */,
 				56611A8E21FC5CDA00D05EE2 /* BaseViewInput.swift in Sources */,
 				5622ECDE21FA69D1008878A0 /* ApiServiceImpl.swift in Sources */,
 				5656504B21FBF0D900AB6673 /* WindDirectionUtilityImpl.swift in Sources */,

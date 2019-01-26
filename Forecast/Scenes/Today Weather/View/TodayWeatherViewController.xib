@@ -236,6 +236,9 @@
                             <state key="normal" title="Share">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="shareButtonAction:" destination="-1" eventType="touchUpInside" id="Ms1-CI-Mnw"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

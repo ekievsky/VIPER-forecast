@@ -35,6 +35,10 @@ final class TodayWeatherViewController: BaseViewController {
 
     private var refreshButton: UIBarButtonItem!
 
+    // MARK: Variables
+    private var viewModel: TodayWeatherViewModel?
+    private var cityName: String?
+
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +75,18 @@ private extension TodayWeatherViewController {
         navigationItem.rightBarButtonItem = barButton
         refreshButton = barButton
     }
+
+    func showActivityController() {
+        guard
+            let viewModel = self.viewModel,
+            let cityName = self.cityName
+        else { return }
+
+        let content = ["Look at the weather in \(viewModel.locationDescription) – \(cityName).",
+            "It is \(viewModel.degrees) and \(viewModel.weatherType) here!"]
+        let activityController = UIActivityViewController(activityItems: content, applicationActivities: nil)
+        present(activityController, animated: true)
+    }
 }
 
 // MARK: - Actions
@@ -84,17 +100,25 @@ extension TodayWeatherViewController {
     private func refreshButtonAction(_ barButton: UIBarButtonItem) {
         output.getWeather()
     }
+
+    @IBAction
+    private func shareButtonAction(_ sender: UIButton) {
+        showActivityController()
+    }
 }
 
 // MARK: - TodayWeatherViewInput
 extension TodayWeatherViewController: TodayWeatherViewInput {
     
     func showWeather(_ viewModel: TodayWeatherViewModel) {
+        self.viewModel = viewModel
+
         if let url = URL(string: viewModel.image) {
             weatherConditionImageView.sd_setImage(with: url, completed: nil)
         }
         LocationManager.shared.getCity { (placemarks, _) in
-            self.placeTitle.text = "\(placemarks!.first?.locality ?? "") \(viewModel.locationDescription)"
+            self.cityName = placemarks?.first?.locality
+            self.placeTitle.text = "\(self.cityName ?? "") \(viewModel.locationDescription)"
         }
 
         weatherTitle.text = "\(viewModel.degrees) | \(viewModel.weatherType)"

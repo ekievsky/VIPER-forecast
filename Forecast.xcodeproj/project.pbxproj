@@ -10,7 +10,6 @@
 		5622ECBA21FA62E2008878A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECB921FA62E2008878A0 /* AppDelegate.swift */; };
 		5622ECC121FA62E5008878A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5622ECC021FA62E5008878A0 /* Assets.xcassets */; };
 		5622ECC421FA62E5008878A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5622ECC221FA62E5008878A0 /* LaunchScreen.storyboard */; };
-		5622ECD021FA63CC008878A0 /* Timberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECCD21FA63CC008878A0 /* Timberjack.swift */; };
 		5622ECD121FA63CC008878A0 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECCE21FA63CC008878A0 /* RequestBuilder.swift */; };
 		5622ECD221FA63CC008878A0 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECCF21FA63CC008878A0 /* RequestExecutor.swift */; };
 		5622ECD921FA6405008878A0 /* ScenesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622ECD821FA6405008878A0 /* ScenesFactory.swift */; };
@@ -59,7 +58,6 @@
 		5622ECC021FA62E5008878A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5622ECC321FA62E5008878A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5622ECC521FA62E5008878A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5622ECCD21FA63CC008878A0 /* Timberjack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timberjack.swift; sourceTree = "<group>"; };
 		5622ECCE21FA63CC008878A0 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		5622ECCF21FA63CC008878A0 /* RequestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
 		5622ECD821FA6405008878A0 /* ScenesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesFactory.swift; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 		5622ECDA21FA68F7008878A0 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				5622ECCD21FA63CC008878A0 /* Timberjack.swift */,
 				5622ECCE21FA63CC008878A0 /* RequestBuilder.swift */,
 				5622ECCF21FA63CC008878A0 /* RequestExecutor.swift */,
 			);
@@ -544,7 +541,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5622ECE921FA6CB6008878A0 /* DateFormatter.swift in Sources */,
-				5622ECD021FA63CC008878A0 /* Timberjack.swift in Sources */,
 				5622ED0421FA7FCE008878A0 /* TodayWeatherPresenter.swift in Sources */,
 				5656503C21FB806200AB6673 /* ReuseProtocol.swift in Sources */,
 				5622ED0821FA7FE2008878A0 /* TodayWeatherViewModel.swift in Sources */,

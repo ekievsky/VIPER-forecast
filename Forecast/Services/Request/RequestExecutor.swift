@@ -19,10 +19,14 @@ extension Request {
 
         private let manager : SessionManager
 
-        private var latestRequest: [DataRequest] = []
+        private let configuration: URLSessionConfiguration = {
+            let config = URLSessionConfiguration.default
+            config.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+
+            return config
+        }()
 
         private init() {
-            let configuration = Timberjack.defaultSessionConfiguration()
             self.manager = SessionManager(configuration: configuration)
         }
 
@@ -42,10 +46,6 @@ extension Request {
                     completion(Result.success(json))
                 }
             }
-        }
-
-        func redoLatestRequests() {
-//            latestRequest.forEach({ $0. })
         }
     }
 }

@@ -1,6 +1,6 @@
 # forecast
 Test project for Megarama
 
-Programming language: Swift 4.2; <br />
-Architecture: VIPER; <br />
-Libraries: Alamofire, SwiftyJSON, SDWebImage, MBProgressHUD;
+__Programming language__: Swift 4.2; <br />
+__Architecture__: VIPER; <br />
+__Libraries__: Alamofire, SwiftyJSON, SDWebImage, MBProgressHUD;
